@@ -30,7 +30,7 @@ public class Main {
     // Метод для форматирования номера телефона покупателя
     public static String viewOFphone(String Phone) {
         // Проверяем, что строка состоит только из цифр и их кол-во не более 10
-        if (!Pattern.matches("\\d{1,10}", Phone)) {
+        if (!Pattern.matches("\\d{10}", Phone)) {
             throw new IllegalArgumentException("Телефон должен состоять из цифр и их кол-во не должно быть больше 10.");
         }
 
